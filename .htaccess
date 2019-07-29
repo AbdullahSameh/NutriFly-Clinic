@@ -1,0 +1,14 @@
+# HTID:8836286: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:8836286:
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Prevent Indexing
+	Options +FollowSymLinks -Indexes
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>

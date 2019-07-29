@@ -1,0 +1,73 @@
+/* *** Start stories Page Edit *** */
+.stories{
+    padding: 4.375rem 0 2.375rem;
+    .story, .side-box {
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: .75rem;
+        border: 1px solid #dee2e6;
+        box-shadow: 0px 0px 6px #ccc;
+        margin-bottom: 2rem;
+    }
+    .story {
+        .head {
+            margin-bottom: .5rem;
+            font-weight: normal;
+            font-size: 3rem;
+            color: $headingColor;
+        }
+        .story-img img {
+            box-shadow: 0px 0px 1px 0px #000;
+        }
+        .story-info {
+            h3 {
+                margin: .75rem 0 .5rem;
+                color: $mainColor;
+            }
+            p {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    .side-box {
+        padding: 0.625rem 0;
+        //text-align: center;
+        .heading {
+            text-align: center;
+            margin-bottom: .5rem;
+            color: $headingColor;
+        }
+        .social {
+            text-align: center;
+            a {
+                margin: 0 2px;
+                font-size: 2.125rem;
+            }
+        }
+        .categories {
+            // text-align: center;
+            a {
+                position: relative;
+                display: block;
+                padding: 0.5rem .75rem;
+                // font-size: 1.25rem;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: none;
+                    top: 0;
+                    left: 0;
+                    height: 40px;
+                    width: 4px;
+                    background-color: $mainColor;
+                    //@include prefixer(transition, all 0.4s ease-in-out, webkit moz o);
+                }
+                &:hover:before {
+                    display: block;
+                    //@include prefixer(transition, all 0.4s ease-in-out, webkit moz o);
+                }
+            }
+        }
+    }
+}
+/* *** End stories Page Edit *** */

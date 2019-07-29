@@ -1,0 +1,58 @@
+/* *** Start Login Page Edit *** */
+.register {
+	width: 28rem;
+	margin: 4.125rem auto auto;
+	.logo {
+		img {
+			height: 9rem;
+			border-radius: 50%;
+			box-shadow: 0px 0px 20px #ccc;
+		}
+	}
+	.log-head {
+		display: flex;
+		.selected {
+			color: $mainColor;
+			&:after {
+				opacity: 1;
+			}
+		}
+		div {
+			flex: auto;
+		    font-size: 1.875rem;
+		    font-weight: 400;
+		    padding: 1.25rem 0;
+		    color: $pColor;
+		    position: relative;
+		    cursor: pointer;
+		    &:after {
+		    	content: '';
+			    position: absolute;
+			    border-width: .8125rem;
+			    border-style: solid;
+			    border-color: transparent transparent #fff transparent;
+			    bottom: -1px;
+			    left: 100px;
+			    opacity: 0;
+		    }
+		}
+	}
+	.log-body {
+		background-color: #fff;
+		border: 1px solid #eee;
+		padding: 3rem;
+		border-radius: .625rem;
+	    box-shadow: 0px 0px 20px #ccc;
+	    margin-bottom: 1rem;
+	    .signup {
+	    	display: none;
+	    }
+	    h5, input, select {
+	    	margin-bottom: .625rem;
+	    }
+	    .second-btn {
+	    	width: 100%;
+	    }
+	}
+}
+/* *** End Login Page Edit *** */

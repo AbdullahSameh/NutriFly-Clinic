@@ -1,0 +1,15 @@
+body * {
+    font-family: 'Amiri', serif;
+}
+
+.about .about-title {
+    width: 38.5rem;
+}
+
+.plan-info p {
+    font-size: 1.75rem;
+}
+
+.stories .story .story-info p {
+    font-size: 1.125rem;
+}

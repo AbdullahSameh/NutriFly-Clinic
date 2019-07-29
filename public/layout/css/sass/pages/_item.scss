@@ -1,0 +1,97 @@
+/* *** Start item Page Edit *** */
+.item {
+	padding: 4rem 0;
+	.item-photo img {
+	    border: 1px solid $borderColor;
+	    border-radius: .25rem;
+	    max-width: 100%;
+	    height: auto;
+	    margin-bottom: 2rem;
+	}
+	.item-detail {
+		.name-item {
+			color: $headingColor;
+			font-size: 2rem;
+		}
+		.item-price {
+			font-size: 1.375rem;
+		    font-weight: 700;
+		    color: $mainColor;
+	        margin: .5rem 0;
+	        border-bottom: 1px solid $borderColor;
+		}
+		.item-weight {
+			font-size: 1.25rem;
+		    font-weight: 700;
+		    color: $mainColor;
+		    padding-bottom: 1.25rem;
+		    margin-bottom: 1rem;
+		    border-bottom: 1px solid $borderColor;
+		    p{
+	    	    margin-bottom: .625rem;
+		    }
+		    span {
+		    	border: 2px solid $pColor;
+				border-radius: .25rem;
+				padding: .5rem .625rem;
+		    }
+		}
+		.item-description {
+			@extend .item-weight;
+		    border-bottom: 0;
+    		padding-bottom: 0;
+    		.desc {
+		    	font-size: 1rem;
+				font-weight: 500;
+    		}
+		}
+		@media (max-width: 768px) {
+		    text-align: center;
+		}
+	}
+	.directory {
+		text-align: center;
+		margin-top: 2rem;
+		ul {
+	    	margin: 3.75rem 0 .625rem;
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: center;
+		    .active {
+		    	background-color: $mainColor;
+				color: #fff;
+				border-color: $mainColor;
+		    }
+			li {
+				margin: 0 .625rem .5rem;
+			    padding: .625rem 1.25rem;
+			    border: 1.5px solid $secondColor;
+			    font-weight: 600;
+			    cursor: pointer;
+			    transition: all 0.25s ease-in-out;
+			    &:hover {
+			    	background-color: $mainColor;
+					color: #fff;
+					border-color: $mainColor;
+			    }
+			    @media (max-width: 768px) {
+				    width: 100%;
+				}
+			}
+		}
+		.direct-content {
+			border: 1px solid $secondColor;
+		    padding: 1.25rem;
+		    margin: 1.5rem 0;
+		    color: $pColor;
+		    line-height: 1.8;
+		    div:not(:first-child) {
+		    	display: none;
+		    }
+		    /* .active {
+		    	display: block;
+		    } */
+		}
+	}
+}
+/* *** End item Page Edit *** */

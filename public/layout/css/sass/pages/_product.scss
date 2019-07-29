@@ -1,0 +1,38 @@
+/* *** Start Product Page Edit *** */
+.product {
+	background-color: $backgroundColor;
+	padding: 4.375rem 0;
+	.category {
+	    display: flex;
+	    flex-direction: column;
+	    /* border: 1px solid rgba(0, 0, 0, .125); */
+	    border-radius: 4px;
+	    /* padding: 0.75rem; */
+	    .cat-head {
+	    	text-align: center;
+		    font-size: 24px;
+		    font-weight: bold;
+		    background-color: $mainColor;
+		    padding: 10px;
+		    border-radius: 4px 4px 0 0;
+	    }
+	    .cat-list {
+	    	.cat-list-item {
+	    		padding: 10px 16px;
+    			border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    			a {
+    				position: relative;
+    				&:before {
+    					font-family: 'font';
+    					content: "";
+    				}
+    				
+    			}
+	    	}
+	    }
+	}
+	.item {
+		float: $floatLeft;
+	}
+}
+/* *** End Product Page Edit *** */

@@ -1,0 +1,44 @@
+/* *** Start Checkout Page Edit *** */
+.checkout {
+	padding: 5rem 0;
+	.card {
+		box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    	.card-header {
+    		background-color: $mainColor;
+	    	border-bottom: 1px solid $mainColor;
+	    	color: #fff;
+    	}
+    }
+    .order-items {
+    	margin-top: -1rem;
+    	.table td, .table th {
+		    border-top: 0;
+		    border-bottom: 1px solid $borderColor;
+    	}
+    	.t-head {
+    		color: $headingColor;
+    	}
+    	.bill-total {
+    		text-align: center;
+    		.shipping {
+    			color: $pColor;
+                font-size: 0.875rem;
+    		}
+    		.grand-total {
+    			color: $headingColor;
+    			margin-top: .3125rem;
+    			font-size: 1.5rem;
+    			span {
+    				color: $mainColor;
+    				font-weight: bold;
+    			}
+    		}
+    	}
+    }
+    .second-btn {
+	    font-size: 1.5rem;
+    	width: 100%;
+    }
+}
+/* *** End Checkout Page Edit *** */

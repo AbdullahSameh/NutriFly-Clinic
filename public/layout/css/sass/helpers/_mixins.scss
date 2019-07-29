@@ -1,0 +1,21 @@
+/*
+ *** Prefixer Mixin
+ *** Add Prefixer To Property Automatically
+ */
+@mixin prefixer($property, $value, $prefixes) {
+	@each $prefix in $prefixes {
+		#{'-' + $prefix + '-' + $property}:$value;
+	}
+	#{$property}:$value;
+}
+/*
+ *** Overlay Mixin
+ */
+@mixin overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}

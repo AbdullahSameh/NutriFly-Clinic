@@ -1,0 +1,97 @@
+/* @@@@@@@@@@ *** Start Globals *** @@@@@@@@@@ */
+body * {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+    background-color: #f7f7f7;
+}
+p {
+	color: $pColor;
+}
+a {
+	Color: $mainColor;
+}
+a:hover {
+	text-decoration: none;
+	Color: $headingColor;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+	/* ########## Start product Box ########## */
+.item-box {
+	background-color: #fff;
+	padding: .5rem;
+	margin-bottom: 1rem;
+	height: 20.125rem;
+    min-height: 20.125rem;
+	border: 1px solid $borderColor;
+	box-shadow: 0px 0px 4px #ccc;
+	border-radius: .75rem;
+	overflow: hidden;
+	@include prefixer(transition, all 0.3s ease-in-out, webkit moz o);
+	&:hover {
+	    border-color: transparent;
+		box-shadow: 3px 3px 15px #ccc, -3px -3px 15px #ccc;
+	}
+	.item-info {
+		position: relative;
+		overflow: hidden;
+		padding: .625rem;
+		.item-btn {
+			position: absolute;
+		    right: .5rem;
+			top: .625rem;
+			@include prefixer(transition, all 0.6s ease-in-out, webkit moz o);
+			.add-to-cart {
+				background-color: #eee;
+			    color: $btnColor;
+			    width: 2.1875rem;
+			    height: 2.1875rem;
+			    font-size: 1.25rem;
+			    border: none;
+			    border-radius: 50%;
+			    cursor: pointer;
+			    @include prefixer(transition, all 0.4s ease-in-out, webkit moz o);
+			    &:hover {
+			    	background: $btnColor;
+					color: #eee;
+			    }
+			    	
+			}
+		}
+		.p-price {
+			color: $headingColor;
+			font-weight: 700;
+			font-size: 1.25rem;
+		}
+		.item-title {
+			color: $mainColor;
+			font-weight: 700;
+			font-size: 1.25rem;
+			margin: .5rem 0 .3125rem;
+		}
+		.sub-title {
+			font-size: .875rem;
+		}
+	}
+	@media (min-width: 768px) and (max-width: 992px) {
+		height: 23rem;
+    	min-height: 23rem;
+	}
+	@media (min-width: 576px) and (max-width: 768px) {
+		height: 29.75rem;
+    	min-height: 29.75rem;
+	}
+	@media (max-width: 576px) {
+		height: auto;
+    	min-height: auto;
+	}
+}
+	/* ########## End product Box ########## */
+/* @@@@@@@@@@ *** End Globals *** @@@@@@@@@@ */

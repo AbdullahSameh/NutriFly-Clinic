@@ -1,0 +1,49 @@
+
+/* Start Login Page Edit */
+.register {
+	width: 28rem;
+	margin: 3.125rem auto auto;
+	
+}
+.log-card .log-head  { display: flex; }
+.log-card .log-head .selected {color: #1c8742;}
+.log-card .log-head > div {
+	flex: auto;
+    font-size: 1.875rem;
+    font-weight: 400;
+    padding: 1.25rem 0;
+    color: #9c9c9c;
+    position: relative;
+    cursor: pointer;
+}
+.log-card .log-head > div:first-child:after,
+.log-card .log-head > div:last-child:after {
+    content: '';
+    position: absolute;
+    border-width: .8125rem;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    bottom: -1px;
+    left: 100px;
+    opacity: 0;
+}
+.log-card .log-head > div.selected:after { opacity: 1; }
+
+
+.log-card .log-body {
+	background-color: #fff;
+	border: 1px solid #eee;
+	padding: 3rem;
+	border-radius: .625rem;
+    box-shadow: 0px 0px 20px #ccc;
+    margin-bottom: 1rem;
+}
+.log-card .log-body .signup {
+	display: none;
+}
+.log-card .log-body h5,
+.log-card .log-body input,
+.log-card .log-body select {
+	margin-bottom: .625rem;
+}
+/* End Login Page Edit */

@@ -1,0 +1,43 @@
+/* *** Start Profile Page Edit *** */
+.profile {
+    padding: 5rem 0;
+    .user-img {
+    	text-align: center;
+    	color: $mainColor;
+    	margin-bottom: 2rem;
+	    img {
+		    border: 1px solid $borderColor;
+		    border-radius: 50%;
+		    max-width: 100%;
+		    height: auto;
+	    }
+	    .user-name {
+	    	font-size: 1.875rem;
+    		padding-top: .5rem;
+	    }
+	    .user-country {
+	    	color: $pColor;
+	    }
+    }
+    .card {
+    	box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.1);
+    	.card-header {
+    		background-color: $mainColor;
+	    	border-bottom: 1px solid $mainColor;
+    	    color: #fff;
+    	}
+    	.head-card {
+    		margin-bottom: .625rem;
+    	}
+    	.show-pass {
+		    background: transparent;
+		    border: none;
+		    float: $floatLeft;
+		    position: absolute;
+		    right: 10px;
+		    top: 31px;
+		    color: #363f4d;
+    	}
+    }
+}
+/* *** End Profile Page Edit *** */

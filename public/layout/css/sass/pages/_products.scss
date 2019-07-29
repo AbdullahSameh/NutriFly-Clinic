@@ -1,0 +1,42 @@
+/* *** Start Products Page Edit *** */
+.product {
+	background-color: $backgroundColor;
+	padding: 4.375rem 0;
+	.category-list {
+	    display: flex;
+	    flex-direction: column;
+	    border-radius: .25rem;
+	    margin-bottom: 3rem;
+	    .cat-head {
+	    	text-align: center;
+		    font-size: 1.5rem;
+		    font-weight: bold;
+		    background-color: $mainColor;
+		    color: #fff;
+		    padding: .625rem;
+		    border-radius: .25rem .25rem 0 0;
+	    }
+	    .cat-list {
+	    	.cat-list-item {
+	    		padding: .625rem 1rem;
+    			border-bottom: 1px solid $secondColor; // rgba(0, 0, 0, 0.125);
+    			a {
+    				position: relative;
+    				&:before {
+    					font-family: 'font';
+    					content: "";
+    				}
+    				
+    			}
+	    	}
+	    }
+	}
+	.item-float {
+		float: $floatLeft;
+	}
+}
+.no-item-message {
+	@extend .empty-shop-cart;
+	margin-left: 3rem;
+}
+/* *** End Products Page Edit *** */
