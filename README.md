@@ -1,4 +1,4 @@
-# NutriFly-Clinic
+# NutriFly Clinic
 This is a small shop (eCommerce) to sell products
 
 this is a version 1 for the project and it is in tow language (Arabic, Englis).
